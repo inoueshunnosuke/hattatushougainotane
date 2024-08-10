@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="adhd_brain">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ADHDと脳</h1>
+                <ol>
+                    <li><a href="adhd.html">注意欠如多動症(ADHD)</a></li>
+                    <li>脳</li>
+                    <li><a href="psychology.html">心理</a></li>
+                    <li><a href="medicine.html">薬</a></li>
+                    <li><a href="support.html">支援</a></li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ADHDのしくみ</h2>
+                <p>発達心理学者のエドモンド・ソヌガ・バークが2003年に発表した理論によれば、ADHDの症状があらわれる原因として、主に以下の二つの経路が知られています。</p>
+                <ul>
+                    <li><a href="../brain.html#zikkoukinou">実行機能</a>の破綻</li>
+                    <li>報酬系神経回路の問題</li>
+                </ul>
+                <p>一つ目は「<a href="../brain.html#zikkoukinou">実行機能</a>の破綻」です。注意を維持できないという問題や意図したことを計画的に実行したり、状況が変化したら柔軟に実行したりすることができないという問題です。</p>
+                <p>二つ目は報酬の遅延に耐えられずに衝動的に他の報酬を選ぶという「報酬系神経回路の問題」です。報酬が得られるまで他のもので気をそらしたり、紛らわしたりすることが多動や不注意の原因になっていると考えられています。</p>
+                <h3>実行機能の破綻</h3>
+                <p>ADHDの行動特性を持っている人は注意を司る部分そのものが小さくなっていることがわかっています。</p>
+                <p>行動抑制を司る<a href="../brain.html#dainoukiteikaku">大脳基底核の線条体</a>の体積が問題なく発達している人の脳と比べて小さいことがわかっています（<a href="https://www.sciencedirect.com/science/article/abs/pii/S0890856710002480">参考文献</a>）。</p>
+                <p>また、なかには、<a href="../brain.html#workingmemory">ワーキングメモリ</a>の機能の働きが低下している人が少なくありません。その理由はいくつかあります。まず、ワーキングメモリを司っている前頭連合野の体積が一定の形で発達している人よりも少ない傾向があるからです。また、ワーキングメモリは脳の司令塔として脳全体に情報を伝達して、行動や情動の調整を司っています。ところが、ADHDの行動特性を持っている人の脳は、そもそも報酬系がうまく対応できない問題も発生しています。このようにワーキングメモリの機能低下や報酬系の機能不全によってADHDのさまざまな症状が引きおこされると考えられています。</p>
+                <h3>報酬系神経回路の問題</h3>
+                <p>D1受容体にドーパミンが結合すると、運動を誘発したり、抑制したりする情報が大脳基底核に伝えられます。ところが、ADHDと診断されている人の脳ではD1受容体が神経伝達物質であるドーパミンと結合する能力が低下していることがわかっています。そのことがわかったのは、2020年5月に行われた浜松医科大学精神医学講座の横倉正倫博士らを中心とする共同研究による発表です。健康な人とADHDと診断されている人それぞれ24人の頭部をPET(陽電子放射断層撮影装置)で撮影し、画像を比較し分析しました。すると、ADHDと診断されている人の脳では、前頭葉の内側部分「全部帯状回」で、D1受容体の結合脳（脳内での密度や活性を反映した指標）が低下していることが確認されたのです。これにより、神経伝達物質であるドーパミンの機能障害がADHDの症状に影響を与えていることがわかりました。</p>
+                <p>ADHDの行動特性を持っている人の脳で、神経伝達物質のドーパミンとD1受容体の結合がうまく機能していない原因の一つとして、脳内のミクログリア細胞がかかわっているという考えが、ミクログリア仮説です。ミクログリア細胞は脳の神経細胞ニューロンを補助する「グリア細胞」の一種で、通常は死んだニューロンなどを取り除く掃除屋として働いています。ところが、神的なストレスが刺激になると、ミクログリア細胞は活性化し、周辺の細胞を破壊するフリーラジカルという分子を放出したり、炎症を引きおこすサイトカンをつくりだしたりします。脳の前頭前野には情報の一時的な保持や計画性に関わる背外側の前頭皮質や衝動性の行動の調整などに重要な眼窩前頭皮質という領域があります。そこで活動するミクログリアがもっているD1受容体に、ドーパミンが結合する能力が高ければ高いほど、素早い作業が困難で不注意が目立つ、注意欠如の特性が目立つことがわかりました。</p>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="adhd_psychology">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ADHDと心理学</h1>
+                <ol>
+                    <li><a href="adhd.html">注意欠如多動症(ADHD)</a></li>
+                    <li><a href="brain.html">脳</a></li>
+                    <li>心理</li>
+                    <li><a href="medicine.html">薬</a></li>
+                    <li><a href="support.html">支援</a></li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ADHDの心理</h2>
+                <p>ADHDのある子どもは全般的に覚醒レベルが低い、言ってみれば<strong>「ぼんやりとした」状態</strong>にあり、<strong>合図によって警告状態が高まる度合いが大きい</strong>と考えられています（<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/brb3.2148">参考文献</a>）。</p>
+                <p>また、生活や学習の場面において、ADHDのある子どもは<strong>「不必要な刺激」に容易に気を取られ、「必要な刺激」を頻繁に見逃します</strong>。課題と全く関わりのない妨害刺激に惹きつけられる性質を注意の被転導性と言い、ADHDのある子どもでは定型発達よりも高くなっていると考えられます。ただし、課題と全く関わりのない「不必要な刺激」が、常にADHDのある子どもに負の影響を及ぼすとは限りません。ADHDのある子どもが課題をしているときに、背景で音楽を流すことが必ずしも妨害にならないことが報告されています（<a href="https://pubmed.ncbi.nlm.nih.gov/8732885/">参考文献</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/21695447/">参考文献</a>）。ADHDのある子どもは課題に適した集中や注意の状態を自ら保つことが難しく、適度なノイズにはそれを補助する効果があるかもしれません（<a href="https://www.sciencedirect.com/science/article/abs/pii/S0965229918309683">参考文献</a>; <a href="https://acamh.onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-7610.2007.01749.x">参考文献</a>）。また、ノイズが持続的に流れていると、不意に出現する「不必要な刺激」が目立ちにくくなり、注意を惹きつけられる度合いが低下することも考えられます。そのため、課題と関連のない「不必要な刺激」であっても、一定のレベルで持続的に存在する場合は、「必要な刺激」や課題に対する注意をむしろ改善することが期待できます。</p>
+                <p>学校生活において、課題に「早く」または「正確に」取り組むことが要求されることがあります。通常、速度（反応時間）が優先された場合は、正確さ（正答率）が低下し、正確さが優先された場合は、速度が遅くなるという早さと正確さのトレードオフの関係が成り立つと言われています（<a href="https://pubmed.ncbi.nlm.nih.gov/24007981/">参考文献</a>）。<strong>ADHDのある子どもでは早さと正確さの最適化や調整が十分ではないことが指摘されています</strong>（<a href="https://www.sciencedirect.com/science/article/abs/pii/S0006322310008255">参考文献</a>）。さらに、早さと正確さのいずれかを重視するとき、ADHDのある子どもは定型発達児と比較して、反応時間の延長およびエラー数の増加があることが報告されています（<a href="https://pubmed.ncbi.nlm.nih.gov/15962705/">参考文献</a>）。</p>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

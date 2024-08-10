@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="asd_medicine">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ASDの治療薬は開発できるのか？</h1>
+                <ol>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li>ASDの治療薬は開発できるのか？</li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ASDの治療薬は開発できるのか？</h2>
+                <p>スイスのチューリッヒ大学研究所のマイケル・コスフェルドらの実験で、「オキシトシン」を協力者に点鼻スプレーで投与させることで、他人への信頼が増加するという論文を2005年に発表しました。実験は、オキシトシンが信頼行動を増加させるのかどうかという仮説を証明するためにおこなわれました。29人の協力者を点鼻薬でオキシトシンを投与するグループと偽薬を投与するグループにわけ、相手をどれだけ信頼することができるのかということを調べました。この実験では協力者を自らのお金を投資する「投資家」と、投資家のお金を運用する「信託者」にわけます。そして、信託者が運用したお金を投資家が受け取るというゲームを匿名による対面で行いました。投資家と信託者はそれぞれ現金化できる12ポイントが与えられます。まず投資家が信託者に送付したポイントは自動的に3倍になります。つまり、信託者は投資家が送金した3倍のポイントを得ることができます。次に信託者は投資家が送金したポイントを自由に選んで変換することができます。3倍になったポイントをそのまま返金してもいいですし、まったく返金しないゼロも可能です。投資家は信託者にお金を送金すると、ゼロになる可能性もありますし、一方で3倍になる可能性もあります。この状態でオキシトシンを投与すれば、オキシトシンが不確実な将来に対する不安を払拭し、相手を信頼できるかどうかの行動を調査することができます。</p>
+                <p>すると、オキシトシンを投与したグループでは、投資家の信託者への信頼が増し、平均して9.6ポイント（中央値10ポイント）預けるという結果になりました。ところが偽薬投与グループでは、信託者を信頼した投資家は、オキシトシンを投与したグループの約半分しかいませんでした。さらにオキシトシンを投与したグループと比べると、投資額は平均して8.1ポイント（中央値8ポイント）でした。</p>
+                <p>この研究によって、愛や信頼、認識に基づいておこなわれる社会全体の活動などの基盤に、オキシトシンが大きくかかわっていることが注目され、さまざまな研究が進みました。2013年、ASDの症状をもっている人たちの脳活動を研究している山末英典らは、オキシトシンの点鼻スプレーの投与によってASDの症状が改善するかどうかを検証しました。この研究では、社会的なコミュニケーションを司っている内側前頭前野が、オキシトシンにどのように反応するのかということについても確認されました。実験は東京大学の附属病院でASDと診断された40名の男性を対象におこなわれました。この実験でも、思い込みなどの偽薬効果を排除するため、臨床試験の参加者も試験担当者も偽薬か本物の薬かわからない状態で研究がおこなわれました。</p>
+                <p>その結果、オキシトシンを1回投与すると、ASDの人でも、表情や声色を活用して、相手の真意を判断する行動がふえていることがわかりました。さらに、社会的なコミュニケーションをつかさどっている内側前頭前野の活動が回復しました。オキシトシンによって脳の活動に変化を与え、治療できる可能性が得られたのです。</p>
+                <p>山末博士らは、さらに研究を進め、オキシトシンの連続投与でも同様の効果があらわれるかどうかの検証をおこないました。実験には、ASDの症状をもつ20名の成人男性が参加し、オキシトシンの点鼻スプレーを毎日2回ずつ連続して6週間使用しました。この研究では連続投与でもASDの主な症状にも改善効果が得られること、さらに連続投与でも有害な事象はふえないことが示されたのです。</p>
+                <p>山末博士は民間の製薬会社と協力して、ASDの治療薬として実用化するため、新規のオキシトシン経鼻剤の開発を行っています。現在、治験は完了し、2022年1月に論文が発表されました。こちらの論文では、改良して生物学的利用能を高めた新規のオキシトシン経鼻剤の、ASDの社会的コミュニケーション障害に対する有効性や安全性が示されました。一方で、高用量で改善される効果が減衰することが示され、今後の更なる開発に向けて検討が行われています。世界初のASD治療薬ができる日もそう遠くはなさそうです。</p>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

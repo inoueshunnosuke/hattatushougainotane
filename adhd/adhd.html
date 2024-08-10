@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RWQ8271MBS');
+        </script>
+        <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+        <script>
+           $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+        </script>
+    </head>
+    <body class="adhd">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>注意欠如多動症(ADHD)</h1>
+                <ol>
+                    <li>注意欠如多動症(ADHD)</li>
+                    <li><a href="brain.html">脳</a></li>
+                    <li><a href="psychology.html">心理</a></li>
+                    <li><a href="medicine.html">薬</a></li>
+                    <li><a href="support.html">支援</a></li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ADHDの基本情報</h2>
+                <p>ADHDとは、「Attention-Deflict / Hyperactivity Disorder」の頭文字をとったものであり、日本では「注意欠如多動症」などと訳されています。身体には何らかの問題は見られないものの、行動の特徴から診断される症状です。</p>
+                <p><a href="https://www.amazon.co.jp/DSM-5-%E7%B2%BE%E7%A5%9E%E7%96%BE%E6%82%A3%E3%81%AE%E8%A8%BA%E6%96%AD%E3%83%BB%E7%B5%B1%E8%A8%88%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E6%97%A5%E6%9C%AC%E7%B2%BE%E7%A5%9E%E7%A5%9E%E7%B5%8C%E5%AD%A6%E4%BC%9A/dp/4260019074">DSM-5</a>におけるADHDの基本症状は、「不注意」、「多動性・衝動性」の2つです。これに、12歳以前の発症、家庭や学校、職場など2つ以上の状況で症状が存在すること、という条件がついています。不注意、多動性・衝動性の症状が、発達段階と不釣り合いであり、その症状があるために日常生活において不適応を起こしている場合に、ADHDという診断が必要となります。<a href="https://www.e-healthnet.mhlw.go.jp/information/heart/k-04-003.html">厚生労働省の調査</a>では6歳から12歳の子どもの3〜7%に症状があらわれるとされています。</p>
+                <h2>ADHDの分類</h2>
+                <p>不注意、多動性・衝動性の基本症状の現れ方には、下図の3つのタイプがあります。ただし、これらの3つの症状は、同時にすべてあらわれるというわけではありません。「多動」が目立つ場合もありますし、「衝動」が目立つ場合もあります。また、「不注意」が症状として強く出る場合もありますし、全ての症状があらわれることもあります。</p>
+                <img src="../images/adhd_type.png" alt="ADHDの3つのタイプ" width="901" height="523" style="display: block; margin: auto;">
+                <p>このようにADHDの症状のあらわれ方は、さまざまなのです。また、成長の途中ではある症状が抑えられたり、症状が目立たなくなったりします。ADHDの症状は主に3つのタイプに分けられますが、不注意、多動性・衝動性のいずれも見られる混合型のタイプがほとんどを占めているとも言われています。</p>
+                <h2>ADHDの症状</h2>
+                <p>不注意、多動性・衝動性とは具体的にどのような症状なのか、<a href="https://www.amazon.co.jp/DSM-5-%E7%B2%BE%E7%A5%9E%E7%96%BE%E6%82%A3%E3%81%AE%E8%A8%BA%E6%96%AD%E3%83%BB%E7%B5%B1%E8%A8%88%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E6%97%A5%E6%9C%AC%E7%B2%BE%E7%A5%9E%E7%A5%9E%E7%B5%8C%E5%AD%A6%E4%BC%9A/dp/4260019074">DSM-5</a>に掲載されているものを紹介します。</p>
+                <dl>
+                    <dt>不注意</dt>
+                    <dd>
+                        <ul>
+                            <li>学業、仕事、または他の活動中に、しばしば綿密に注意することができない、または不注意な間違いをする。</li>
+                            <li>課題または遊びの活動中に、しばしば注意を持続することが困難である。</li>
+                            <li>直接話しかけられたときに、しばしば聞いていないように見える。</li>
+                            <li>課題や活動を順序立てることがしばしば困難である。</li>
+                            <li>精神的努力の持続を要する課題に従事することをしばしば避ける、嫌う、またはいやいや行う。</li>
+                            <li>課題や活動に必要なものをしばしばなくしてしまう。</li>
+                            <li>しばしば外的な刺激によってすぐ気が散ってしまう。</li>
+                            <li>しばしば日々の活動で忘れっぽい。</li>
+                        </ul>
+                    </dd>
+                    <dt>多動性および衝動性</dt>
+                    <dd>
+                    <ul>
+                        <li>しばしば手足をそわそわと動かしたりトントン叩いたりする、またはいすの上でもじもじする。</li>
+                        <li>席についていることが求められる場面でしばしば席を離れる。</li>
+                        <li>不適切な状況でしばしば走り回ったり高い所へ登ったりする（青年または成人では、落ち着かない感じのみに限られるかもしれない）。</li>
+                        <li>静かに遊んだり余暇活動につくことがしばしばできない。</li>
+                        <li>しばしば"じっとしていない"、またはまるで"エンジンで動かされているように"行動する。</li>
+                        <li>しばしばしゃべりすぎる。</li>
+                        <li>しばしば質問が終わる前に出し抜いて答え始めてしまう。</li>
+                        <li>しばしば自分の順番を待つことが困難である。</li>
+                        <li>しばしば他人を妨害し、邪魔する（例：会話、ゲーム、または活動に干渉する）。</li>
+                    </ul>
+                    </dd>
+                </dl>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

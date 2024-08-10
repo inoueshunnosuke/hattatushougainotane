@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="column">
+        <header>
+            <img class="pc" src="images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="hattatushougai.html">発達障害について</a></li>
+                    <li><a href="brain.html">脳についての基礎知識</a></li>
+                    <li><a href="column.html">コラム</a></li>
+                    <li><a href="reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>コラム</h1>
+            </div>
+            <div class="inner">
+                <h2>発達障害に関係があるコラム</h2>
+                <ul>
+                    <li><a href="column/asd_medicine.html">ASDの治療薬は開発できるのか？</a></li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

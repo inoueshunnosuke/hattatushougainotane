@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="ld">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>学習障害(LD)</h1>
+                <ol>
+                    <li>学習障害(LD)</li>
+                    <li><a href="brain.html">脳</a></li>
+                    <li><a href="psychology.html">心理</a></li>
+                    <li><a href="support.html">支援</a></li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>LDの基本情報</h2>
+                <p>発達障害には、「読み」「書き」「計算」など、基本的な学習の一部に著しい困難をきたす「学習障害(LD)」があります。「学習障害」は、もともと英語の英語のLearning Disorders（医学用語）を翻訳した用語です。</p>
+                <p><a href="https://www.mext.go.jp/a_menu/shotou/tokubetu/material/__icsFiles/afieldfile/2012/12/10/1328729_01.pdf">2012年の文部科学省の全国調査</a>では、学習面に著しい困難をあらわす児童や生徒は4.5%存在することが明らかにされています。</p>
+                <h2>LDの分類</h2>
+                <p>LDのある子どもには、全般的な知的発達の遅れはみられません。幼児のときは日常生活にさほど支障がないことも多いのですが、小学校に上がった頃から、「聞く」「話す」「読む」「書く」「計算する」「推論する」という学習の基盤となる技能が身につかず、授業についていくのがむずかしくなっていきます。特徴的なのは、これらの6つの学習のすべてに困難があるのではなく、「一部の学習だけがうまくいかない」という傾向がある点です。そのためLDは、学習の困難さの特徴によって、さらに「読字障害」「書字障害」「算数障害」の3つに分類されます。</p>
+                <h3>読字障害・書字障害</h3>
+                <p>LDでみられる「読字障害」「書字障害」「算数障害」のうち、最も多くみられるのは、読字障害(ディスクレシア)です。読字障害の子どもには、「形の似た『わ』と『ね』、『シ』と『ツ』などを読み間違える」、「読んでいるところを確認するように指でおさえながら読む」、「文章を読んでいる途中でどこを読んでいたかわからなくなる」、「読み飛ばしたり文末を適当に変えて読んだりする」、「読むのに時間がかかる」といった特徴がみられます。</p>
+                <p>言葉に関するもう一つの障害、書字障害(ディスグラフィア)には、「文字が正しく書けない」、「文字を書き写せない」といったことがみられます。具体的には、「『は』を『わ』、『を』を『お』と書きまちがえる」、「『め』と『ぬ』、『雪』と『雷』のように形の似ている文字の書き分けをまちがえる」、「左右が反転した鏡文字を書いてしまう」、「筆順のまちがいが多い」、「文字の形や大きさがバラバラになったりマス目からはみ出たりする」といったものがあります。</p>
+                <p>読むことが困難だと書くことも困難になることが多く、両者が並存した「読み書き障害」がおきる例も少なくありません。読み書き障害で顕著なのは、「音韻認識」の弱さです。音韻認識とは「文字や熟語の意味をはなれて、音の構造に注目できる」認識能を指します。音韻認識が弱いと、まず、ひらがなの読み書きにつまずき、さらに「れいぞうこ」と「でーぞーこ」といったような、似た音の区別ができなくなります。また、「単語や文章（文字）を見たときに、それが頭の中で正しい音に変換されずに、正しい読み方がわからず、憶測で読もうとしたり、記憶をたどって読もうとする」といったこともおきたりします。</p>
+                <p>ただし、このような読み書き障害があっても、頭の中では言葉とその意味はつながっており、「言葉」の理解ができないわけではないのです。</p>
+                <h3>算数障害</h3>
+                <p>算数障害は、数処理、数概念、計算、推論の4つの能力で考えるとわかりやすいです。ただし、これら4つそれぞれの内容には偏りがあります。「数の順番はわかるが、量としての数がイメージできない」、「暗算はできるが、筆算はできない」といったように、部分的に、数や計算や推論ができない場合に、算数障害と判断されます。算数障害の子どもには、単にケアレスミスではなく、いつも同じような傾向のミスをしてしまいます。</p>
+                <p>数処理とは、数詞（数の言葉）、数字、具体物の対応関係の理解を指します。たとえば、4の読み方は「よん」で、これを数詞と言います。書き方は「4」で、これが数字です。数処理には、この数詞（よん）と数字（4）と具体的にある物（リンゴ4つなど）の三者を結びつける必要があります。これができないと、数字は書けるものの正しく読めなかったり、「リンゴを4個もってきて」といわれたときに正しい数だけ取れなかったりといったことがおきます。</p>
+                <p>数概念とは、数の量的な概念（基数性）と数の順序（序数性）の理解を指します。基数性がわからないと、「数の大小関係」が理解できず、序数性がわからないと、「自分が列の何番目にいるかを答えられない」といったことがおきます。</p>
+                <p>計算については、暗算と筆算に分けて考えます。暗算では「和が20までの数のたし算・ひき算、九九の範囲のかけ算・わり算を指を使ったりせずに、即座に答えることができるか」が、筆算では、「くり上がり・くり下りなどの計算の手つづきができるか」「数字を空間的にきちんと配置できるか」、といったことがポイントになります。</p>
+                <p>数的推論とは、文章題を解くなど、具体的な場面などで数の操作ができることを言います。設問の文章を読んで具体的な場面を思い浮かべ、式を立てて計算し、正しい答えを導けるかが問われます。</p>
+                <p>学校などでよくみられるのは、「数の量感はわかっても、筆算の手つづきが混乱してしまう」、反対に「計算は手つづきとしてはできるが、数字が示す量感がわからない」パターンです。</p>
+                <h2>LDの症状</h2>
+                <p>現在では<a href="https://www.amazon.co.jp/DSM-5-%E7%B2%BE%E7%A5%9E%E7%96%BE%E6%82%A3%E3%81%AE%E8%A8%BA%E6%96%AD%E3%83%BB%E7%B5%B1%E8%A8%88%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E6%97%A5%E6%9C%AC%E7%B2%BE%E7%A5%9E%E7%A5%9E%E7%B5%8C%E5%AD%A6%E4%BC%9A/dp/4260019074/ref=nosim?tag=seeddiversity-22">DSM-5</a>において限局性学習症(Specific Learning Disorder;SLD)と定義されています。<a href="https://www.amazon.co.jp/DSM-5-%E7%B2%BE%E7%A5%9E%E7%96%BE%E6%82%A3%E3%81%AE%E8%A8%BA%E6%96%AD%E3%83%BB%E7%B5%B1%E8%A8%88%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E6%97%A5%E6%9C%AC%E7%B2%BE%E7%A5%9E%E7%A5%9E%E7%B5%8C%E5%AD%A6%E4%BC%9A/dp/4260019074/ref=nosim?tag=seeddiversity-22">DSM-5</a>の定義を紹介します。</p>
+                <ul>
+                    <li>学習や学業的技能の使用に困難があり、その困難を対象とした介入が提供されているにもかかわらず、以下の症状の少なくとも一つが存在し、少なくとも6ヶ月間持続していることで明らかになる。:</li>
+                    <ul>
+                        <li>不的確または速度が遅く、努力を要する読字</li>
+                        <li>読んでいるものの意味を理解することの困難さ</li>
+                        <li>綴字の困難さ</li>
+                        <li>数学の概念、数値、または計算を習得することの困難さ</li>
+                        <li>数学的推論の困難さ</li>
+                    </ul>
+                    <li>欠陥のある学業的技能は、その人の暦年齢に期待されるよりも、著明にかつ定量的に低く、学業または職業遂行能力、または日常生活活動に意味のある障害を引き起こしており、個別施行の標準化された到達尺度および総合的な臨床評価で確認されている。17歳以上の人においては、確認された学習困難の経歴は標準化された評価の代わりにしてもよいかもしれない。</li>
+                    <li>学習困難は学齢期に始まるが、欠陥のある学業的技能に対する要求が、その人の限られた能力を超えるまでは完全には明らかにならないかもしれない。</li>
+                    <li>学習困難は知的能力障害群、非矯正視力または聴力、他の精神または神経疾患、心理社会的逆境、学業的指導に用いる言語の習熟度不足、または不適切な教育的指導によってはうまく説明されない。</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="asd">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>自閉スペクトラム症(ASD)</h1>
+                <ol>
+                    <li>自閉スペクトラム症(ASD)</li>
+                    <li><a href="brain.html">脳</a></li>
+                    <li><a href="psychology.html">心理</a></li>
+                    <li><a href="medicine.html">薬</a></li>
+                    <li><a href="support.html">支援</a></li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ASDの基本情報</h2>
+                <p>自閉スペクトラム症(Autism Spectrum Disorder: ASD)には相手に共感することができなかったり、こだわりが強かったりする症状があります。「スペクトラム」とは虹のことで、自閉症の症状を虹のようにグラデーションで連続的なものとする考え方です。たとえば、自閉症としての特定が強い人がいる一方で、自閉症の特性はもっているけれども、自閉症の診断基準を満たさない人もいます。このように連続性がある特性がASDの特徴なのです。このような考え方から<a href="https://www.amazon.co.jp/DSM-5-%E7%B2%BE%E7%A5%9E%E7%96%BE%E6%82%A3%E3%81%AE%E8%A8%BA%E6%96%AD%E3%83%BB%E7%B5%B1%E8%A8%88%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E6%97%A5%E6%9C%AC%E7%B2%BE%E7%A5%9E%E7%A5%9E%E7%B5%8C%E5%AD%A6%E4%BC%9A/dp/4260019074/ref=nosim?tag=seeddiversity-22">DSM-5</a>では、自閉症とアスペルガー症候群がASDにまとめられています。</p>
+                <p>有病率は約1〜3%で、男子に多く、有病率は女子の2〜9倍といわれています。</p>
+                <h2>ASDの分類</h2>
+                <p>ASDの症状は大きく下図のように2つあります。</p>
+                <img src="../images/asd_type.png" alt="ASDの3つのタイプ" width="901" height="250" style="display: block; margin: auto;">
+                <h2>ASDの症状</h2>
+                <p><a href="https://www.amazon.co.jp/DSM-5-%E7%B2%BE%E7%A5%9E%E7%96%BE%E6%82%A3%E3%81%AE%E8%A8%BA%E6%96%AD%E3%83%BB%E7%B5%B1%E8%A8%88%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-%E6%97%A5%E6%9C%AC%E7%B2%BE%E7%A5%9E%E7%A5%9E%E7%B5%8C%E5%AD%A6%E4%BC%9A/dp/4260019074/ref=nosim?tag=seeddiversity-22">DSM-5</a>の診断基準を紹介します。</p>
+                <ul>
+                    <li>複数の状況で社会的コミュニケーションおよび対人的相互反応における持続的な欠陥があり、現時点または病歴によって、以下により明らかになる。</li>
+                    <ul>
+                        <li>相互の対人的-情緒的関係の欠落で、例えば、対人的に以上な近づき方や通常の会話のやりとりのできないといったものから、興味、情動、または感情を共有することの少なさ、社会的相互反応を開始したり応じたりすることができないことに及ぶ。</li>
+                        <li>対人的相互反応で非言語コミュニケーション行動を用いることの欠陥、例えば、まとまりのわるい言語的、非言語的コミュニケーションから、視線を合わせることと身振りの異常、または身振りの理解やその使用の欠陥、顔の表情や非言語的コミュニケーションの完全な欠陥に及ぶ。</li>
+                        <li>人間関係を発展させ、維持し、それを理解することの欠陥で、例えば、さまざまな社会的状況に合った行動に調整することの困難さから、想像上の遊びを他者と一緒にしたり友人を作ることの困難さ、または仲間に対する興味の欠如に及ぶ。</li>
+                    </ul>
+                    <li>行動、興味、または活動の限定された反復的な様式で、現在または病歴によって、以下の少なくとも2つにより明らかになる。</li>
+                    <ul>
+                        <li>常同的または反復的な身体の運動、物の使用、または会話</li>
+                        <li>同一性への固執、習慣への頑ななこだわり、または言語的、非言語的な儀式的行動様式</li>
+                        <li>強度または対象において異常なほど、きわめて限定され執着する興味</li>
+                        <li>感覚刺激に対する過敏さまたは鈍感さ、または環境の感覚的側面に対する並外れた興味</li>
+                    </ul>
+                    <li>症状は発達早期に存在していなければならない（しかし社会的要求が能力の限界を超えるまでは症状は完全に明らかにならないかもしれないし、その後の生活で学んだ対処の仕方によって隠されている場合もある）。</li>
+                    <li>その症状は、社会的、職業的、または他の重要な領域における現在の機能に臨床的に意味のある障害を引き起こしている。</li>
+                    <li>これらの障害は、知的能力障害(知的発達症)または全般的発達遅延ではうまく説明されない。</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

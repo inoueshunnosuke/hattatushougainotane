@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="adhd_medicine">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ADHDと薬</h1>
+                <ol>
+                    <li><a href="adhd.html">注意欠如多動症(ADHD)</a></li>
+                    <li><a href="brain.html">脳</a></li>
+                    <li><a href="psychology.html">心理</a></li>
+                    <li>薬</li>
+                    <li><a href="support.html">支援</a></li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ADHDの薬物療法</h2>
+                <p>ADHDの薬物療法としては、コンサータ（メチルフェニデート）、ストラテラ（アトモキセチン塩酸塩）、インチュニブ（グァンファシン）、ビバンセ（リスデキサンフェタミンメシル酸塩）などがあります（2020年現在）。薬は一時的に症状を軽くしてくれますが、基本的には、服薬さえしていればよいのではありません。服薬により症状が改善されている間に、教育効果が上げられるようにすることが不可欠です。また、どんな薬にも必ず副作用はあります。主治医と相談の上、子どもの成長にとって最善と思われる選択をする必要があります。</p>
+                <h3>メチルフェニデート（コンサータ）</h3>
+                <p>メチルフェニデート（コンサータ）の作用は、ひとことで言うとシナプスでのドーパミンの再取りこみの阻害です。ADHDの人の脳のなかでは遺伝的に実行機能系の神経伝達物質であるノルアドレナリンと報酬系の神経伝達物質であるドーパミンが過剰に再取りこみ（脳内の別の神経細胞の受容体と結合しなかった神経伝達物質が神経細胞に取り込まれて再利用されること）されやすいとされています。このため、神経伝達物質が少なくなるので、情報が神経細胞に伝わりづらくなり、機能不全を起こすと考えられているのです。メチルフェニデート（コンサータ）は、再取りこみ口の入り口にくっついて、神経伝達物質の再取りこみを阻害します。その結果、ドーパミンの量がふえ、情報伝達が改善され、自分の力で行動を調整できるようになります。</p>
+                <p>朝服薬すると夕方まで効果が認められるので、学校にいる時間帯にADHDの症状を抑えることができます。ADHDの約8割に効果が見られるといわれていますが、効果には個人差があり、食欲不振や不眠などの副作用が出ることもあります。</p>
+                <h3>アトモキセチン塩酸塩（ストラテラ、アトモキセチン）</h3>
+                <p>シナプスでのノルアドレナリン再取りこみを阻害します。</p>
+                <h3>グァンファシン（インチュニブ）</h3>
+                <p>交感神経に作用し、過剰な興奮を抑えます。交感神経は運動など活動時に働きます（逆に、睡眠時など安静にしている時には副交感神経が働きます）。交感神経の働きを抑えることで、ADHDの症状を改善するものです。眠気やめまいなどの副作用が出ることがあります。</p>
+                <h3>リスデキサンフェタミンメシル酸塩（ビバンセ）</h3>
+                <p>ビバンセは、シナプスでのノルアドレナリン再取りこみとドーパミン再取りこみを阻害し分泌を促進する中枢神経刺激薬です。覚醒剤の原料となる成分が含まれていることから、厳重な流通管理の対象となっています。</p>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>

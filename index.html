@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="home">
+            <header>
+                <img class="pc" src="images/logo.png" alt="Seed" width="238" height="80">
+                <img class="sp" src="images/logo_sp.png" alt="Seed" width="108.6" height="96">
+                <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+                <label for="navToggle" class="btn-burger">
+                    <span class="icon"></span>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="hattatushougai.html">発達障害について</a></li>
+                        <li><a href="brain.html">脳についての基礎知識</a></li>
+                        <li><a href="column.html">コラム</a></li>
+                        <li><a href="reaserch_result.html">研究成果</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="visual">
+                    <div class="site">
+                        <p class="catch"><span><span class="red">発</span>達<span class="red">障</span>害</span>の種</p>
+                        <p class="sub">科学で紐解くヒトの謎</p>
+                    </div>
+                </div>
+                <div class="inner">
+                    <h2>発達障害の種</h2>
+                    <p>最近、よく言葉を聞くようになった「発達障害」。仕事や人間関係などで生きづらさを感じている人たちが、自分も発達障害ではないかと感じて、注目度が上がっています。芸能人が自ら発達障害であることを明かして、話題になったこともあります。しかし、発達障害とはそもそも何なのでしょうか？</p>
+                    <p>本サイト「発達障害の種」では、主に子どもに焦点を当てて、発達障害の原因と支援方法を科学で紐解くことに挑戦しています。その際に、以下の書籍を参考にしています。</p>
+                    <ul>
+                        <li><a href="https://www.amazon.co.jp/%E6%94%B9%E8%A8%82-%E8%84%B3%E3%81%8B%E3%82%89%E3%82%8F%E3%81%8B%E3%82%8B%E7%99%BA%E9%81%94%E9%9A%9C%E5%AE%B3-%E5%A4%9A%E6%A7%98%E3%81%AA%E8%84%B3%E3%83%BB%E5%A4%9A%E6%A7%98%E3%81%AA%E7%99%BA%E9%81%94%E3%83%BB%E5%A4%9A%E6%A7%98%E3%81%AA%E5%AD%A6%E3%81%B3-%E9%B3%A5%E5%B1%85-%E6%B7%B1%E9%9B%AA/dp/4805881747/ref=nosim?tag=seeddiversity-22">改訂 脳からわかる発達障害: 多様な脳・多様な発達・多様な学び</a></li>
+                        <li><a href="https://www.amazon.co.jp/%E5%88%A5%E5%86%8A-%E7%B2%BE%E7%A5%9E%E7%A7%91%E5%8C%BB%E3%81%8C%E8%AA%9E%E3%82%8B-%E7%99%BA%E9%81%94%E9%9A%9C%E5%AE%B3%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E3%83%A0%E3%83%83%E3%82%AF-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%B3%E3%83%97%E3%83%AC%E3%82%B9/dp/4315526347/ref=nosim?tag=seeddiversity-22">別冊　精神科医が語る 発達障害のすべて (ニュートンムック) </a></li>
+                        <li><a href="https://www.amazon.co.jp/%E7%99%BA%E9%81%94%E9%9A%9C%E5%AE%B3%E3%81%AE%E5%BF%83%E7%90%86%E5%AD%A6-%E7%89%B9%E5%88%A5%E6%94%AF%E6%8F%B4%E6%95%99%E8%82%B2%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%82%A8%E3%83%93%E3%83%87%E3%83%B3%E3%82%B9-%E5%8C%97-%E6%B4%8B%E8%BC%94/dp/4571121393/ref=nosim?tag=seeddiversity-22">発達障害の心理学 特別支援教育を支えるエビデンス</a></li>
+                        <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiqwZmrvNb-AhUBYA8CHaJmDNIYABAFGgJ0Yg&ohost=www.google.com&cid=CAESbeD2dQlvDx_HDsonc2nHbpa6hNda2e_JKcZq1UcwSV4NCjco0jK5TBKDF1ngzbtu3zdurmAa8-w8GwboeTKXEi9lxUsvBOiLtcxOIn-PFzUuMT1D5qp6iKDpO1E8zXh0bvYrMe8Dce29uRkATxs&sig=AOD64_1TwiKgwcEz1V1AK1AfTNg4NOrurw&ctype=5&q=&ved=2ahUKEwj27JKrvNb-AhVDgsYKHdB5AOIQ9aACKAB6BAgBEAw&adurl=">ニュートン式 超図解 最強に面白い!! 脳 (ニュートン式超図解 最強に面白い!!) </a></li>
+                    </ul>
+                    <p><strong>本サイトは、発達障害の子どもの支援方法をただ知るのではなく、原因解明の研究に基づいた支援方法をその原因とともに知ることが重要であるという立場をとっています。</strong>原因解明が最も活かされる場面は、子どもに対する客観的な評価（アセスメント）です。たとえば、<a href="/ld/ld.html">LD</a>の読字障害に関して、読みにつまづく原因が分かると、原因に応じた支援をすることが可能となります。読みの基礎的な認知機能が多岐にわたるように、読みのつまずきの原因も一つではありません。子どもに対して最も効果的な支援を行うためには、原因を明らかにすることが近道であると考えています。</p>
+                    <p>また、脳の一部からだけでなく、<span id="sinkeikouseishugi">神経構成主義(neuroconstructivism)的アプローチ</span>からも原因解明を行うような挑戦をしています。神経構成主義とは何かを説明するために、神経構成主義の理論的支柱の一人であるカミロフ-スミス,A(Karmiloff-Smith,A)のウィリアム症候群に対する考察を、以下で簡潔に紹介します。</p>
+                    <p>ウィリアム症候群は、特定領域の遺伝子欠損を原因とするものであり、原因が明確な知的障害としてよく知られたものです。しかし、カミロフ-スミスは、ウィリアム症候群における遺伝子欠損は発達初期における「脳発達全般」に影響を及ぼし、そうした状態の脳と「環境」の間に「相互作用」が生じていくことにより、ウィリアムス症候群における心理機能の全般的な特徴が形成され、また変化していくと主張しています。</p>
+                    <p>すなわち、「<a href="https://pubmed.ncbi.nlm.nih.gov/21227254/">発達それ自体が、発達障害を理解する鍵</a>」であり、本サイトでも脳の一部からだけでなく、環境や社会との相互作用など、<strong>より広い視点から発達障害の原因解明</strong>を行うような挑戦をします。</p>
+                    <h2>本サイトの説明</h2>
+                    <ul>
+                        <li>ホーム：現在閲覧していただいているページ</li>
+                        <li>発達障害について：発達障害について科学的な根拠に基づいてさまざまな観点からまとめたページ</li>
+                        <li>脳についての基礎知識：発達障害を理解する上で必要になる脳についての基礎知識をまとめたページ</li>
+                        <li>コラム：発達障害に関係あることや筆者の考えをまとめたページ</li>
+                        <li>研究成果:発達障害に関する筆者の研究成果をまとめたページ</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                <p><small>&copy; 2023 Seed</small></p>
+            </footer>
+    </body>
+</html>

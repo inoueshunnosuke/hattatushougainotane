@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="発達障害の種はのすけnosukeが発達障害の情報をまとめたサイトです。">
+        <title>発達障害の種</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-m.css" media="only screen and (min-width:600px) and (max-width:979px)">
+        <link rel="stylesheet" href="../css/style-s.css" media="only screen and (max-width:599px)">
+        <link rel="icon" href="/favicon.ico" id="favicon">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+         <!-- Google tag (gtag.js) -->
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWQ8271MBS"></script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'G-RWQ8271MBS');
+         </script>
+         <script src="//code.jquery.com/jquery-1.12.1.min.js"></script>
+         <script>
+            $(document).ready(function() {
+                // ページ内リンクがクリックされたときに実行される処理
+                $('a[href^="#"]').click(function() {
+                    var headerHeight = $('header').height(); // ヘッダーの高さを取得
+                    var href = $(this).attr('href');
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top - headerHeight; // スクロール位置を調整
+                    $('html, body').animate({scrollTop: position}, 500, 'swing');
+                    return false;
+                });
+            });
+
+            $(window).on('load', function() {
+                var target = window.location.hash;
+                if( target ) {
+                    var $target = $(target);
+                    if( $target.length ) {
+                    $('html, body').stop().animate({
+                        scrollTop: $target.offset().top - 100 // fixed header height
+                    }, 1000);
+                    }
+                }
+            });
+         </script>
+    </head>
+    <body class="adhd_support">
+        <header>
+            <img class="pc" src="../images/logo.png" alt="Seed" width="238" height="80">
+            <img class="sp" src="../images/logo_sp.png" alt="Seed" width="108.6" height="96">
+            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
+            <label for="navToggle" class="btn-burger">
+                <span class="icon"></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">ホーム</a></li>
+                    <li><a href="../hattatushougai.html">発達障害について</a></li>
+                    <li><a href="../brain.html">脳についての基礎知識</a></li>
+                    <li><a href="../column.html">コラム</a></li>
+                    <li><a href="../reaserch_result.html">研究成果</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <h1>ADHDの支援</h1>
+                <ol>
+                    <li><a href="adhd.html">注意欠如多動症(ADHD)</a></li>
+                    <li><a href="brain.html">脳</a></li>
+                    <li><a href="psychology.html">心理</a></li>
+                    <li><a href="medicine.html">薬</a></li>
+                    <li>支援</li>
+                </ol>
+            </div>
+            <div class="inner">
+                <h2>ADHDの支援</h2>
+                <p>ADHDのある子どもへの教育的支援の最大の目標は、二次的な問題の予防です。対人不信等を引き起こさないよう、自尊心と良好な対人関係を支えていくことが第一です。また、注意機能の弱さに配慮した環境調整も重要です。ADHDのある子どもは、環境調整や教育がうまくいくと、個人差はあるものの年齢が上がるとともに基本症状はおさまっていきます。</p>
+                <p>そのためには、次のような点に配慮して教育を行なっていくようにします。</p>
+                <ul>
+                    <li>余分な刺激を減らす（環境調整）</li>
+                    <li>望ましい行動は増やし望ましくない行動は減らす</li>
+                    <li>トラブルを起こさない工夫</li>
+                    <li>失いやすい自信と意欲を支える手だて</li>
+                    <li>基本的な信頼関係と自尊感情を育てる</li>
+                    <li>コントロール力を育てる</li>
+                </ul>
+                <h3>余分な刺激を減らす（環境調整）<br>〜注意機能への配慮〜</h3>
+                <p>ADHDのある子どもは、選択的注意が弱く刺激に反応しやすいので、できるだけ余分な刺激を減らします。目に見えるところに色々なものを置かないようにすることはもちろん、学用品などもシンプルで飾りなどのないものを選ようにします。片づけが下手なので、机の上が乱雑になりがちで、そのために一層集中できなくなります。机の上の物を一時的に片付ける箱などを用意するのもよいでしょう。</p>
+                <p>指示や説明をするときは、情報を整理して、大事なことや結論を簡潔に伝えるようにしましょう。ADHDのある子どもは、集中時間が短かったり、ワーキングメモリが弱い子もいるので、そのような子は長い説明は途中でわからなくなってしまいます。ポイントを整理してメモで伝えることは、情報が消えないので彼らの集中とワーキングメモリの弱さを補ってくれます。</p>
+                <h3>望ましい行動は増やし望ましくない行動は減らす<br>〜報酬系への配慮〜</h3>
+                <p>ADHDのある子どもは望ましい行動と望ましくない行動が逆転しやすいことを理解しましょう。というのは、たいがいの場合、離席やかんしゃくなど一般的に望ましくない行動のほうが「周囲の注目」という報酬を得やすいからです。望ましい行動を十分ほめたうえであれば、望ましくない行動に対しては注目しない（反応しない）という指導が効果的になります。</p>
+                <p>ADHDのある子どもの関心はすぐに移ってしまうので、望ましい行動に対して、その場ですぐにほめないと効果がありません。これを即時評価といいます。</p>
+                <p>さらに、脳の報酬系の障害は将来の成果を待つことを困難にします。目の前の現実に動かされやすいので、目に見える具体的な報酬（ごほうび）を使うことが効果的です。ごほうびといっても特別な物である必要はなく、子どもが喜ぶものなら何でもよいのです。</p>
+                <h3>トラブルを起こさない工夫<br>〜実行機能への配慮〜</h3>
+                <p>ADHDのある子どもは「抑制」の問題のために、しばしばトラブルを起こしてしまいます。しかし、彼らの自尊心は傷つきやすいので、できるだけ叱ることは少なくしたいものです。やって良いことと悪いことをはっきりと教えることは、ADHDのある子どもにとって、他の子ども以上に大切です。</p>
+                <p>事前に、どう行動すべきかをわかりやすく伝え、見通しがもてるようにしましょう。また、達成できそうな目標を子どもと相談して決めておくことも大切です。</p>
+                <p>ADHDのある子どもを言葉の指示だけでコントロールしようとしても、うまくいきません。彼らの行動のほうが早いので、たいがいの場合、怒鳴り声が背中を追いかける事態になりやすいのです。言葉だけでコントロールしようとせず、行動のレベルで調整していくようにすることを心がけましょう。例えば、「走らない!」と怒鳴るよりも、手をつないでしまうほうがうまくいきます。</p>
+                <p>ADHDのある子どもにとって、トラブルを避けるための適切な方法を学ぶことは重要です。友だちが遊んでいる場面に乱入する子どもは、「仲間に入れて」と言葉で伝えることを知らないのかもしれません。友だちの持ち物を勝手に使ってしまう子どもは「貸して」と頼めば借りられることを学んでないのかも知れません。適切なソーシャルスキルを身につけることは重要です。</p>
+                <h3>失いやすい自信と意欲を支える手だて</h3>
+                <p>失敗経験が積み重なることで自信や意欲を失うと、ますます適応状態が悪くなります。成功体験を積み重ね、自己肯定感を高めることができるような支援が重要です。</p>
+                <h3>基本的な信頼関係と自尊感情を育てる</h3>
+                <p>親や教師など、ADHDのある子どもにとって身近な大人が信頼できる存在となることは、最も基本的で最も重要なことです。二次的な問題をもつようになったADHDのある子どもは、周囲の人間すべてを信用できず、敵視しています。そのために、攻撃的な行動をとってしまうのです。</p>
+                <p>ADHDの症状も見方を変えれば、衝動性は「素早い反応」として、多動性は「行動力」として、不注意は「豊かな発想」として活かせるかもしれません。</p>
+                <h3>コントロール力を育てる</h3>
+                <p>教育的には、力ずくで抑える教育、恐怖で従わせる指導は、一時的に子どもをおとなしくさることはできても、子ども自身が自分をコントロールする力は育たないといわれています。子ども自身がどうしたいか（モチベーション）、どうするべきか考え（判断）、自分をコントロールしようとすることが重要です。</p>
+            </div>
+        </main>
+        <footer>
+            <p><small>&copy; 2023 Seed</small></p>
+        </footer>
+    </body>
+</html>
